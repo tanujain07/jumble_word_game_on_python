@@ -1,4 +1,4 @@
-import random
+import random as rd;
 def choose(): 
    
     words = ['rainbow', 'computer', 'science', 'programming', 
@@ -6,7 +6,7 @@ def choose():
              'water', 'board', 'geeks'] 
   
    
-    pick = random.choice(words) 
+    pick = rd.choice(words) 
   
     return pick 
   
@@ -14,7 +14,7 @@ def choose():
  
 def jumble(word): 
     
-    random_word = random.sample(word, len(word)) 
+    random_word = rd.sample(word, len(word)) 
   
    
     jumbled = ''.join(random_word) 
@@ -45,7 +45,7 @@ def check_win(player1, player2, p1score, p2score):
 
 def play(): 
   
-    p1name = input("player 1, Please enter your name :") 
+    p1name = input("Player 1, Please enter your name :") 
     p2name = input("Player 2 , Please enter your name: ") 
   
    
@@ -116,7 +116,7 @@ def play():
                 turn += 1
   
             else: 
-                print("Better luck next time.. :") 
+                print("Better luck next time.. !!") 
                 print(p1name, 'Your turn.') 
                 ans = input('what is in your mind? ') 
   
